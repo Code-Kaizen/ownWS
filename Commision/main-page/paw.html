@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWRCHASE</title>
+    <link rel="stylesheet" href="/main-page/paw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="loader-wrapper" id="loader_wrapper">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+</div>
+    <div class="header">
+        <img class="logo" src="/first-page/Your paragraph text.png">
+        <img class="dogs" src="/first-page/Untitled design-39.png" alt="">
+        <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+        <nav id="navLinks">
+            <ul>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">GROOM</a></li>
+                <li><a href="#">CATEGORIES</a></li>
+                <li><a href="#">VIEW CART</a></li>
+                <a href="#">
+                    <div class="avatar">
+                    <div class="info">
+                        <h2>JOHN DOE</h2>
+                        <div class="more">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+                        <p>Mambaling, Alaska</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <p>jdoe@gmail.com</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z"/></svg>
+                        <p>+63922345210</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">Pet Records</a>
+                                <a href="#">Bookings</a>
+                                <a href="#">Purchases</a>
+                                <a href="#">Payment</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div></a>
+            </ul>
+            <i class="fa-solid fa-xmark" onclick="navClose()"></i>
+        </nav>
+    </div>
+    <div class="content">
+        <h2>Schedule a paw-refic <span>A</span>grooming date for your pets with us!</h2>
+    </div>
+    <a href="/schedule/schedule.html"><button onclick="alertOpen()"><img src="/first-page/download-removebg-preview.png" style="width: 30px;"><span>BOOK APPPOINTMENT</span> <img src="/first-page/download-removebg-preview.png" style="width: 30px;"></button></a>
+    <div class="footer-div">
+        <img src="/first-page/Untitled design-21.png" alt="">
+        <div class="question_wrapper" onclick="Open()" ondblclick="Close()">
+        <div class="question" id="que" >
+        <h2 class="q" id="q">?</h2>
+        <div class="inside-question" id="inside">
+            <div class="img-container">
+                <p>How can we help you today</p>
+                <input type="text" placeholder="Type message here...">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
+        function navOpen(){
+        navLinks.style.right = "0"
+}
+        function navClose(){
+        navLinks.style.right = "-100%"
+}
+        var loader_wrapper = document.getElementById("loader_wrapper");
+         setTimeout(function () {
+         loader_wrapper.style.opacity = "0";
+         loader_wrapper.style.zIndex = "-1"
+        }, 3000);
+
+
+        const que = document.getElementById("que");
+        function Open(){
+            que.style.overflow = "visible"
+            q.style.transform = "rotate(360deg)"
+            q.style.zIndex = "-1"
+        }
+        function Close(){
+            que.style.overflow = "hidden"
+            q.style.transform = "rotate(0deg)"
+            q.style.zIndex = "1"
+        }
+        const alert = document.getElementById("alert");
+        function alertOpen(){
+            alert.style.left = "50%"
+        }
+        function alertClose(){
+            alert.style.left = "-50%"
+        }
+    </script>
+</body>
+</html>

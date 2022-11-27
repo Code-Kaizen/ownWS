@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWRCHASE</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="loader-wrapper" id="loader_wrapper">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+</div>
+    <nav class="header">
+        <a href="/main-page/paw.html"><h1><img class="logo" src="/first-page/Your paragraph text.png" alt=""></h1></a>
+        <div class="navs">
+            <ul>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">GROOM</a></li>
+                <li><a href="/products/products.html">CATEGORIES</a></li>
+                <li><a id="vc" href="/login.html/login.html">VIEW CART</a></li>
+                <div><img src="/main-page/Untitled design-44.png" alt=""></div>
+            </ul>
+        </div>
+    </nav>
+    <img class="bunch-dogs" src="/first-page/Untitled design-39.png" alt="">
+    </div>
+    <div class="category-links">
+        <div class="shop-products">
+                <h2>SHOP PRODUCTS</h2>
+        </div>
+        <nav>
+           <ul>
+            <li><a href="#">DRY DOG FOOD</a></li>
+            <li><a href="#">WET DOGFOOD</a></li>
+            <li><a href="#">TREATS</a></li>
+            <li><a href="#">ACCESORIES</a></li>
+            <li><a href="#">TOYS</a></li>
+           </ul>
+        </nav>
+    </div>
+    <img class="paw" src="/products/Untitled design-37.png" alt="">
+    <img class="pow" src="/products/Untitled design-37.png" alt="">
+    <div class="footer-div">
+        <div class="img-1">
+            <img src="/products/Untitled design-31.png" alt="">
+        <div class="info">
+            <h3>ROYAL CANIN</h3>
+            <p>Mini-Adult</p>
+        </div>
+        </div>
+        <div class="img-1">
+            <img src="/products/Untitled design-41.png" alt="">
+            <div class="info">
+            <h3>PEDIGREE</h3>
+            <p>Homestyle</p>
+        </div>
+        </div>
+        <div class="img-1">
+            <img src="/products/Untitled design-40.png" alt="">
+        <div class="info">
+            <h3>PURINA ALPO</h3>
+            <p>Adult</p>
+        </div>
+        </div>
+        <div class="img-1">
+            <img src="/products/Untitled design-42.png" alt="">
+        <div class="info">
+            <h3>PEDIGREE</h3>
+            <p>Puppy Chicken</p>
+        </div>
+        </div>
+        <div class="img-1">
+            <img src="/products/kqbahgr5akd8oofrb78s.png" alt="">
+        <div class="info">
+            <h3>PEDIGREE</h3>
+            <p>Adult Beef</p>
+        </div>
+        </div>
+        <div class="img-1">
+            <img src="/products/Your paragraph text-19.png" alt="">
+        <div class="info">
+            <h3>PEDIGREE</h3>
+            <p>Rodeo Dental Stix</p>
+        </div>
+        </div>
+        <div class="question_wrapper" onclick="Open()" ondblclick="Close()">
+            <div class="question" id="que" >
+            <h2 class="q" id="q">?</h2>
+            <div class="inside-question" id="inside">
+                <div class="img-container">
+                    <p>How can we help you today</p>
+                    <input type="text" placeholder="Type message here...">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+                const que = document.getElementById("que");
+        function Open(){
+            que.style.overflow = "visible"
+            q.style.transform = "rotate(360deg)"
+            q.style.zIndex = "-1"
+        }
+        function Close(){
+            que.style.overflow = "hidden"
+            q.style.transform = "rotate(0deg)"
+            q.style.zIndex = "1"
+        }
+        const alert = document.getElementById("alert");
+        function alertOpen(){
+            alert.style.left = "50%"
+        }
+        function alertClose(){
+            alert.style.left = "-50%"
+        }
+            var loader_wrapper = document.getElementById("loader_wrapper");
+         setTimeout(function () {
+         loader_wrapper.style.opacity = "0";
+         loader_wrapper.style.zIndex = "-1"
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWRCHASE</title>
+    <link rel="stylesheet" href="paw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="loader-wrapper" id="loader_wrapper">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+</div>
+    <div class="header">
+        <img class="logo" src="/first-page/Your paragraph text.png">
+        <img class="dogs" src="/first-page/Untitled design-39.png" alt="">
+        <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+        <nav id="navLinks">
+            <ul>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">GROOM</a></li>
+                <li><a href="#">CATEGORIES</a></li>
+                <li><a href="#">VIEW CART</a></li>
+                <a href="#"><div class="avatar" onclick="alertOpen()"></div></a>
+            </ul>
+            <i class="fa-solid fa-xmark" onclick="navClose()"></i>
+        </nav>
+    </div>
+    <div class="content">
+        <h2>Schedule a paw-refic <span>A</span>grooming date for your pets with us!</h2>
+    </div>
+    <button onclick="alertOpen()"><img src="/first-page/download-removebg-preview.png" style="width: 30px;"><span>BOOK APPPOINTMENT</span> <img src="/first-page/download-removebg-preview.png" style="width: 30px;"></button>
+    <div class="footer-div">
+        <img src="/first-page/Untitled design-21.png" alt="">
+        <div class="question_wrapper" onclick="Open()" ondblclick="Close()">
+        <div class="question" id="que" >
+        <h2 class="q" id="q">?</h2>
+        <div class="inside-question" id="inside">
+            <div class="img-container">
+                <p>How can we help you today</p>
+                <input type="text" placeholder="Type message here...">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="alert_wrapper" id="alert">
+    <div class="alert" >
+        <img src="/first-page/Untitled design-36.png" alt="">
+        <img src="/first-page/Untitled design-36.png" alt="">
+        <img src="/first-page/Untitled design-36.png" alt="">
+        <img src="/first-page/Untitled design-36.png" alt="">
+        <h2>WOOF!</h2>
+        <p class="pls">Please login to book appointment and add items to cart</p>
+        <input class="text" type="text" placeholder="Username.." required>
+        <input class="text" type="password" placeholder="Password.." required>
+        <a href="/main-page/paw.html">
+        <input class="input_btn" type="button" value="Login"></a>
+        <div class="new">
+            <p><a href="#">New Member?</a</p>
+            <p><a href="#">Forgot Password?</a></p>
+        </div>
+            <i class="fa-solid fa-xmark" onclick="alertClose()"></i>
+    </div>
+    </div>
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
+        function navOpen(){
+        navLinks.style.right = "0"
+}
+        function navClose(){
+        navLinks.style.right = "-100%"
+}
+        var loader_wrapper = document.getElementById("loader_wrapper");
+         setTimeout(function () {
+         loader_wrapper.style.opacity = "0";
+         loader_wrapper.style.zIndex = "-1"
+        }, 3000);
+
+
+        const que = document.getElementById("que");
+        function Open(){
+            que.style.overflow = "visible"
+            q.style.transform = "rotate(360deg)"
+            q.style.zIndex = "-1"
+        }
+        function Close(){
+            que.style.overflow = "hidden"
+            q.style.transform = "rotate(0deg)"
+            q.style.zIndex = "1"
+        }
+        const alert = document.getElementById("alert");
+        function alertOpen(){
+            alert.style.left = "50%"
+        }
+        function alertClose(){
+            alert.style.left = "-50%"
+        }
+    </script>
+</body>
+</html>
